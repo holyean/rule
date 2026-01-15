@@ -1,6 +1,6 @@
 # NAME: Meta
 # AUTHOR: Holyean
-# UPDATED: 2024-10-03
+# UPDATED: 2026-01-15
 DOMAIN,graph.facebook.com
 DOMAIN-SUFFIX,bintray.com
 DOMAIN-SUFFIX,whatsapp.biz
@@ -473,6 +473,11 @@ DOMAIN-SUFFIX,mcrouter.org
 DOMAIN-SUFFIX,messenger.com
 DOMAIN-SUFFIX,messengerdevelopers.com
 DOMAIN-SUFFIX,meta.com
+DOMAIN-SUFFIX,meta.ai
+DOMAIN-SUFFIX,meta.app
+DOMAIN-SUFFIX,meta.store
+DOMAIN-SUFFIX,metaquest.com
+DOMAIN-SUFFIX,metaquestvr.com
 DOMAIN-SUFFIX,midentsolutions.com
 DOMAIN-SUFFIX,mobilefacebook.com
 DOMAIN-SUFFIX,moneywithfacebook.com
@@ -517,6 +522,8 @@ DOMAIN-SUFFIX,rocksdb.org
 DOMAIN-SUFFIX,shopfacebook.com
 DOMAIN-SUFFIX,sportsfacebook.com
 DOMAIN-SUFFIX,sportstream.com
+DOMAIN-SUFFIX,spark.ar
+DOMAIN-SUFFIX,sparkar.com
 DOMAIN-SUFFIX,supportfacebook.com
 DOMAIN-SUFFIX,terragraph.com
 DOMAIN-SUFFIX,thefacebook.com
@@ -539,6 +546,9 @@ DOMAIN-SUFFIX,whatsapp.org
 DOMAIN-SUFFIX,whatsapp.tv
 DOMAIN-SUFFIX,whatsappbrand.com
 DOMAIN-SUFFIX,whyfacebook.com
+DOMAIN-SUFFIX,facebook.watch
+DOMAIN-SUFFIX,fb.watch
+DOMAIN-SUFFIX,threads.com
 DOMAIN-SUFFIX,workplace.com
 DOMAIN-SUFFIX,workplaceusecases.com
 DOMAIN-SUFFIX,worldhack.com
@@ -559,6 +569,20 @@ DOMAIN-KEYWORD,facebook
 DOMAIN-KEYWORD,fbcdn
 DOMAIN-KEYWORD,instagram
 IP-ASN,32934,no-resolve
+IP-CIDR,31.13.24.0/21,no-resolve
+IP-CIDR,45.64.40.0/22,no-resolve
+IP-CIDR,66.220.144.0/20,no-resolve
+IP-CIDR,69.63.176.0/20,no-resolve
+IP-CIDR,69.171.224.0/19,no-resolve
+IP-CIDR,74.119.76.0/22,no-resolve
+IP-CIDR,103.4.96.0/22,no-resolve
+IP-CIDR,179.60.192.0/22,no-resolve
+IP-CIDR,185.60.216.0/22,no-resolve
+IP-CIDR,204.15.20.0/22,no-resolve
+IP-CIDR,157.240.0.0/16,no-resolve
+IP-CIDR,163.70.0.0/16,no-resolve
+IP-CIDR,173.252.0.0/16,no-resolve
+IP-CIDR6,2a03:2880::/32,no-resolve
 IP-CIDR,158.85.224.160/27,no-resolve
 IP-CIDR,158.85.46.128/27,no-resolve
 IP-CIDR,158.85.5.192/27,no-resolve
@@ -581,7 +605,6 @@ IP-CIDR,119.235.224.0/24,no-resolve
 IP-CIDR,119.235.232.0/24,no-resolve
 IP-CIDR,119.235.236.0/23,no-resolve
 IP-CIDR,129.134.0.0/17,no-resolve
-IP-CIDR,157.240.0.0/17,no-resolve
 IP-CIDR,169.45.248.118/32,no-resolve
 IP-CIDR,173.252.64.0/18,no-resolve
 IP-CIDR,3.123.36.126/32,no-resolve
