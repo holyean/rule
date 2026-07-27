@@ -15,10 +15,26 @@ RULE-SET,https://raw.githubusercontent.com/holyean/rule/main/surge/cn-direct.lis
 GEOIP,CN,DIRECT,no-resolve
 ```
 
-The workflow updates the generated file every Monday at 11:17 China Standard
-Time and only commits when the resulting rules change.
+## Global Proxy
+
+`surge/global-proxy.list` consolidates the QuixoticHeart global-proxy list,
+blackmatrix7's app and user-agent coverage, and non-overlapping SukkaW global
+supplements. It removes duplicated records and excludes the SukkaW test-only
+hostname.
+
+Use it after specific service rules and before `cn-direct.list`:
+
+```ini
+RULE-SET,https://raw.githubusercontent.com/holyean/rule/main/surge/global-proxy.list,美国线路,extended-matching,no-resolve
+RULE-SET,https://raw.githubusercontent.com/holyean/rule/main/surge/cn-direct.list,DIRECT,no-resolve
+GEOIP,CN,DIRECT,no-resolve
+```
+
+The workflow updates both generated libraries every Monday at 11:17 China
+Standard Time and only commits when the resulting output changes.
 
 ## Sources
 
 - https://github.com/QuixoticHeart/rule-set
+- https://github.com/blackmatrix7/ios_rule_script
 - https://ruleset.skk.moe

@@ -1,4 +1,4 @@
-name: Update CN Direct Rules
+name: Update Surge Rule Libraries
 
 on:
   workflow_dispatch:
@@ -14,16 +14,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Build consolidated rule set
-        run: ./scripts/build-cn-direct.sh
+      - name: Build consolidated rule sets
+        run: |
+          ./scripts/build-cn-direct.sh
+          ./scripts/build-global-proxy.sh
 
       - name: Commit changes when sources changed
         run: |
-          if git diff --quiet -- surge/cn-direct.list; then
+          if git diff --quiet -- surge/cn-direct.list surge/global-proxy.list; then
             exit 0
           fi
           git config user.name "holyean-rule-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add surge/cn-direct.list
-          git commit -m "chore: update CN direct rules"
+          git add surge/cn-direct.list surge/global-proxy.list
+          git commit -m "chore: update Surge rule libraries"
           git push
