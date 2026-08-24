@@ -2,7 +2,7 @@
 # POLICY: Proxy policy selected by the client
 # DESCRIPTION: Consolidated global-proxy rules for Surge.
 # SOURCES: QuixoticHeart/rule-set proxy; blackmatrix7/ios_rule_script Global; SukkaW global supplements.
-# RULES: 29896
+# RULES: 29915
 DOMAIN,1password.drift.click
 DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
 DOMAIN,adobeereg.com
@@ -651,6 +651,7 @@ DOMAIN-SUFFIX,59mvmv.com
 DOMAIN-SUFFIX,5aimiku.com
 DOMAIN-SUFFIX,5axis-machining.com
 DOMAIN-SUFFIX,5beatsbydre.com
+DOMAIN-SUFFIX,5ch.io
 DOMAIN-SUFFIX,5ch.net
 DOMAIN-SUFFIX,5fang.cc
 DOMAIN-SUFFIX,5i01.com
@@ -1919,6 +1920,7 @@ DOMAIN-SUFFIX,amazontrust.com
 DOMAIN-SUFFIX,amazonvideo.cc
 DOMAIN-SUFFIX,amazonvideo.com
 DOMAIN-SUFFIX,amazonvideodirect.com
+DOMAIN-SUFFIX,amazonwebservices.com
 DOMAIN-SUFFIX,amazonworkdocs.com
 DOMAIN-SUFFIX,amc.com
 DOMAIN-SUFFIX,amcn.com
@@ -2178,6 +2180,7 @@ DOMAIN-SUFFIX,api.mixpanel.com
 DOMAIN-SUFFIX,api.moomoobull.com
 DOMAIN-SUFFIX,api.nebula-emby.com
 DOMAIN-SUFFIX,api.news
+DOMAIN-SUFFIX,api.shuaiapi.com
 DOMAIN-SUFFIX,apiary.io
 DOMAIN-SUFFIX,apiauto.ru
 DOMAIN-SUFFIX,apibay.org
@@ -4961,6 +4964,7 @@ DOMAIN-SUFFIX,brew.sh
 DOMAIN-SUFFIX,brewmp.com
 DOMAIN-SUFFIX,briantreepayments.net
 DOMAIN-SUFFIX,briantreepayments.tv
+DOMAIN-SUFFIX,briarproject.org
 DOMAIN-SUFFIX,bridge-studio.co.uk
 DOMAIN-SUFFIX,bridgebim.com
 DOMAIN-SUFFIX,bridgestone-asiapacific.com
@@ -7973,6 +7977,7 @@ DOMAIN-SUFFIX,drdreprobeatssale.com
 DOMAIN-SUFFIX,dreamamateurs.com
 DOMAIN-SUFFIX,dreambmw.ca
 DOMAIN-SUFFIX,dreamforce.com
+DOMAIN-SUFFIX,dreamgen.com
 DOMAIN-SUFFIX,dreammovies.com
 DOMAIN-SUFFIX,dreamorder.com
 DOMAIN-SUFFIX,dreamteamfc.com
@@ -9524,6 +9529,7 @@ DOMAIN-SUFFIX,fans-here.com
 DOMAIN-SUFFIX,fans17.com
 DOMAIN-SUFFIX,fans66.tw
 DOMAIN-SUFFIX,fansking.tw
+DOMAIN-SUFFIX,fansly.com
 DOMAIN-SUFFIX,fansnudes.com
 DOMAIN-SUFFIX,fansone.co
 DOMAIN-SUFFIX,fanspot.jp
@@ -12478,6 +12484,7 @@ DOMAIN-SUFFIX,hiporn.net
 DOMAIN-SUFFIX,hippyhillscomix.com
 DOMAIN-SUFFIX,hipzoom.net
 DOMAIN-SUFFIX,hiroshimabank.co.jp
+DOMAIN-SUFFIX,historylines.net
 DOMAIN-SUFFIX,historyofdota.com
 DOMAIN-SUFFIX,historyofdota.net
 DOMAIN-SUFFIX,historyofdota.org
@@ -15248,6 +15255,7 @@ DOMAIN-SUFFIX,killercb.ru
 DOMAIN-SUFFIX,killwall.com
 DOMAIN-SUFFIX,kilmeadeandfriends.com
 DOMAIN-SUFFIX,kimchi.tv
+DOMAIN-SUFFIX,kimi.ai
 DOMAIN-SUFFIX,kimogirl.cc
 DOMAIN-SUFFIX,kimosex.com
 DOMAIN-SUFFIX,kimy.com.tw
@@ -15319,6 +15327,7 @@ DOMAIN-SUFFIX,kitakyushubank.co.jp
 DOMAIN-SUFFIX,kiwi.jp
 DOMAIN-SUFFIX,kiwi.kz
 DOMAIN-SUFFIX,kiwibrowser.com
+DOMAIN-SUFFIX,kiwix.org
 DOMAIN-SUFFIX,kiyobank.co.jp
 DOMAIN-SUFFIX,kk-whys.co.jp
 DOMAIN-SUFFIX,kk.stream
@@ -16601,6 +16610,7 @@ DOMAIN-SUFFIX,mcdonaldsapps.com
 DOMAIN-SUFFIX,mcdonaldsarabia.com
 DOMAIN-SUFFIX,mcdonaldsparties.co.nz
 DOMAIN-SUFFIX,mcdonaldsparties.com.au
+DOMAIN-SUFFIX,mceindex.com
 DOMAIN-SUFFIX,mcfog.com
 DOMAIN-SUFFIX,mcisco.com
 DOMAIN-SUFFIX,mcpeaceofmind.com
@@ -17582,6 +17592,7 @@ DOMAIN-SUFFIX,moon.fm
 DOMAIN-SUFFIX,moonbbs.com
 DOMAIN-SUFFIX,moonbbs.info
 DOMAIN-SUFFIX,moonbingo.com
+DOMAIN-SUFFIX,moonshot.ai
 DOMAIN-SUFFIX,mooo.com
 DOMAIN-SUFFIX,moozporn.com
 DOMAIN-SUFFIX,moptt.tw
@@ -18588,6 +18599,8 @@ DOMAIN-SUFFIX,nichepornsites.com
 DOMAIN-SUFFIX,nichost.ru
 DOMAIN-SUFFIX,nickscipio.com
 DOMAIN-SUFFIX,nicky.xxx
+DOMAIN-SUFFIX,nico.ms
+DOMAIN-SUFFIX,nicochannel.jp
 DOMAIN-SUFFIX,nicodic.jp
 DOMAIN-SUFFIX,nicolepeters.com
 DOMAIN-SUFFIX,nicomanga.jp
@@ -18886,6 +18899,7 @@ DOMAIN-SUFFIX,noodlemagazine.com
 DOMAIN-SUFFIX,noodlevpn.com
 DOMAIN-SUFFIX,noosferabank.ru
 DOMAIN-SUFFIX,norbulingka.org
+DOMAIN-SUFFIX,nordcdn.com
 DOMAIN-SUFFIX,nordstrom.com
 DOMAIN-SUFFIX,nordstromimage.com
 DOMAIN-SUFFIX,nordstrommedia.com
@@ -18895,6 +18909,7 @@ DOMAIN-SUFFIX,norsk.mobi
 DOMAIN-SUFFIX,norton.com
 DOMAIN-SUFFIX,nos.nl
 DOMAIN-SUFFIX,note.com
+DOMAIN-SUFFIX,notegpt.io
 DOMAIN-SUFFIX,notepad-plus-plus.org
 DOMAIN-SUFFIX,noticias-rt.com
 DOMAIN-SUFFIX,notimundo.press
@@ -18907,6 +18922,7 @@ DOMAIN-SUFFIX,notion.so
 DOMAIN-SUFFIX,notionusercontent.com
 DOMAIN-SUFFIX,nottinghampost.com
 DOMAIN-SUFFIX,novafile.com
+DOMAIN-SUFFIX,novelai.net
 DOMAIN-SUFFIX,novelasia.com
 DOMAIN-SUFFIX,noveltrove.com
 DOMAIN-SUFFIX,novids.com
@@ -19344,6 +19360,7 @@ DOMAIN-SUFFIX,older-women-porn.com
 DOMAIN-SUFFIX,older.tube
 DOMAIN-SUFFIX,oldhornymilfs.com
 DOMAIN-SUFFIX,oldje.com
+DOMAIN-SUFFIX,oldmapsonline.org
 DOMAIN-SUFFIX,olehd.com
 DOMAIN-SUFFIX,olehdtv.com
 DOMAIN-SUFFIX,olelive.com
@@ -24515,6 +24532,7 @@ DOMAIN-SUFFIX,talantix.ru
 DOMAIN-SUFFIX,talentlens.com
 DOMAIN-SUFFIX,taleofthenight.com
 DOMAIN-SUFFIX,talk853.com
+DOMAIN-SUFFIX,talkai.info
 DOMAIN-SUFFIX,talkatone.com
 DOMAIN-SUFFIX,talkboxapp.com
 DOMAIN-SUFFIX,talkcc.com
@@ -28149,6 +28167,7 @@ DOMAIN-SUFFIX,x365x.com
 DOMAIN-SUFFIX,x3guide.com
 DOMAIN-SUFFIX,x3vid.com
 DOMAIN-SUFFIX,x6av.com
+DOMAIN-SUFFIX,x86.fr
 DOMAIN-SUFFIX,x99av.com
 DOMAIN-SUFFIX,x9wang.com
 DOMAIN-SUFFIX,xacmbq.xyz
