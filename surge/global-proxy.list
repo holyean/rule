@@ -2,7 +2,7 @@
 # POLICY: Proxy policy selected by the client
 # DESCRIPTION: Consolidated global-proxy rules for Surge.
 # SOURCES: QuixoticHeart/rule-set proxy; blackmatrix7/ios_rule_script Global; SukkaW global supplements.
-# RULES: 29920
+# RULES: 29932
 DOMAIN,1password.drift.click
 DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
 DOMAIN,adobeereg.com
@@ -4157,6 +4157,7 @@ DOMAIN-SUFFIX,blackamateursvideos.com
 DOMAIN-SUFFIX,blackandstacked.com
 DOMAIN-SUFFIX,blackboxgames.com
 DOMAIN-SUFFIX,blacked.com
+DOMAIN-SUFFIX,blackedraw.com
 DOMAIN-SUFFIX,blackfridaydrebeatsnew.com
 DOMAIN-SUFFIX,blackfridaydrebeatsshop.com
 DOMAIN-SUFFIX,blackhomeporn.com
@@ -10802,6 +10803,8 @@ DOMAIN-SUFFIX,gate.ac
 DOMAIN-SUFFIX,gate.cc
 DOMAIN-SUFFIX,gate.com
 DOMAIN-SUFFIX,gate.io
+DOMAIN-SUFFIX,gate.tv
+DOMAIN-SUFFIX,gateapi.io
 DOMAIN-SUFFIX,gatecoin.com
 DOMAIN-SUFFIX,gatedata.org
 DOMAIN-SUFFIX,gateimg.com
@@ -15798,6 +15801,7 @@ DOMAIN-SUFFIX,linpie.com
 DOMAIN-SUFFIX,linseysworld.com
 DOMAIN-SUFFIX,linux.do
 DOMAIN-SUFFIX,linux.org
+DOMAIN-SUFFIX,linux.sb
 DOMAIN-SUFFIX,linuxfoundation.org
 DOMAIN-SUFFIX,linuxfromscratch.org
 DOMAIN-SUFFIX,linuxmint.com
@@ -16986,6 +16990,7 @@ DOMAIN-SUFFIX,milfthreesomes.com
 DOMAIN-SUFFIX,milftube.pro
 DOMAIN-SUFFIX,milftugs.com
 DOMAIN-SUFFIX,milfvr.com
+DOMAIN-SUFFIX,milfy.com
 DOMAIN-SUFFIX,milfzr.com
 DOMAIN-SUFFIX,miliav.com
 DOMAIN-SUFFIX,milkmanbook.com
@@ -22067,6 +22072,7 @@ DOMAIN-SUFFIX,roboform.com
 DOMAIN-SUFFIX,roborecall.com
 DOMAIN-SUFFIX,robotoffice.com
 DOMAIN-SUFFIX,robustnessiskey.com
+DOMAIN-SUFFIX,roc-taiwan.org
 DOMAIN-SUFFIX,rocket-inc.net
 DOMAIN-SUFFIX,rocket.chat
 DOMAIN-SUFFIX,rocketbbs.com
@@ -22120,6 +22126,7 @@ DOMAIN-SUFFIX,roudao6.buzz
 DOMAIN-SUFFIX,roudaosp.cc
 DOMAIN-SUFFIX,roughebonysex.com
 DOMAIN-SUFFIX,roughman.net
+DOMAIN-SUFFIX,roushuwo.com
 DOMAIN-SUFFIX,routerboard.com
 DOMAIN-SUFFIX,routledgehandbooks.com
 DOMAIN-SUFFIX,rowblocks.com
@@ -23378,6 +23385,7 @@ DOMAIN-SUFFIX,slashdot.org
 DOMAIN-SUFFIX,slashine.onl
 DOMAIN-SUFFIX,slavbank.ru
 DOMAIN-SUFFIX,slavicstar.com
+DOMAIN-SUFFIX,slayed.com
 DOMAIN-SUFFIX,slaytizle.com
 DOMAIN-SUFFIX,slc.tl
 DOMAIN-SUFFIX,sldolls.com
@@ -24512,6 +24520,7 @@ DOMAIN-SUFFIX,taiwanbible.com
 DOMAIN-SUFFIX,taiwancon.com
 DOMAIN-SUFFIX,taiwandaily.net
 DOMAIN-SUFFIX,taiwandc.org
+DOMAIN-SUFFIX,taiwanembassy.org
 DOMAIN-SUFFIX,taiwanhot.net
 DOMAIN-SUFFIX,taiwanjustice.com
 DOMAIN-SUFFIX,taiwanjustice.net
@@ -25804,6 +25813,7 @@ DOMAIN-SUFFIX,turntable.fm
 DOMAIN-SUFFIX,tusco.ru
 DOMAIN-SUFFIX,tushy.com
 DOMAIN-SUFFIX,tushycash.com
+DOMAIN-SUFFIX,tushyraw.com
 DOMAIN-SUFFIX,tuta.com
 DOMAIN-SUFFIX,tuta.io
 DOMAIN-SUFFIX,tutamail.com
@@ -26940,6 +26950,7 @@ DOMAIN-SUFFIX,vivatube.com
 DOMAIN-SUFFIX,vivaxnxx.com
 DOMAIN-SUFFIX,vivthomas.com
 DOMAIN-SUFFIX,vixen.com
+DOMAIN-SUFFIX,vixengroup.com
 DOMAIN-SUFFIX,vixvids.to
 DOMAIN-SUFFIX,vizvaz.com
 DOMAIN-SUFFIX,vjav.com
@@ -28081,6 +28092,7 @@ DOMAIN-SUFFIX,wsjplus.com
 DOMAIN-SUFFIX,wsjshop.com
 DOMAIN-SUFFIX,wsjwine.com
 DOMAIN-SUFFIX,wtbn.org
+DOMAIN-SUFFIX,wtfpass.com
 DOMAIN-SUFFIX,wtfpeople.com
 DOMAIN-SUFFIX,wtmobile.com
 DOMAIN-SUFFIX,wto.org
