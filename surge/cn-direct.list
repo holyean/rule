@@ -2,7 +2,7 @@
 # POLICY: DIRECT
 # DESCRIPTION: Consolidated mainland-China direct rules for Surge.
 # SOURCES: QuixoticHeart/rule-set cn; SukkaW domestic domain and CIDR supplements.
-# RULES: 108900
+# RULES: 108899
 DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
 DOMAIN,acg.tv
 DOMAIN,app.viayoo.com
@@ -82105,7 +82105,6 @@ DOMAIN-SUFFIX,spsb114.com
 DOMAIN-SUFFIX,spsicloudport.com
 DOMAIN-SUFFIX,spsisctgroup.com
 DOMAIN-SUFFIX,spsisncl.com
-DOMAIN-SUFFIX,spst2.com
 DOMAIN-SUFFIX,spsy.org
 DOMAIN-SUFFIX,sptcc.com
 DOMAIN-SUFFIX,sptccn.com

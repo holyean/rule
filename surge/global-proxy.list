@@ -2,7 +2,7 @@
 # POLICY: Proxy policy selected by the client
 # DESCRIPTION: Consolidated global-proxy rules for Surge.
 # SOURCES: QuixoticHeart/rule-set proxy; blackmatrix7/ios_rule_script Global; SukkaW global supplements.
-# RULES: 29932
+# RULES: 29935
 DOMAIN,1password.drift.click
 DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
 DOMAIN,adobeereg.com
@@ -4882,6 +4882,7 @@ DOMAIN-SUFFIX,bowlroll.net
 DOMAIN-SUFFIX,bowsersinsidestory.com
 DOMAIN-SUFFIX,box.com
 DOMAIN-SUFFIX,box.net
+DOMAIN-SUFFIX,boxcloud.com
 DOMAIN-SUFFIX,boxofficemojo.com
 DOMAIN-SUFFIX,boxpn.com
 DOMAIN-SUFFIX,boxun.com
@@ -18884,6 +18885,7 @@ DOMAIN-SUFFIX,nodejs.org
 DOMAIN-SUFFIX,nodequality.com
 DOMAIN-SUFFIX,nodereal.io
 DOMAIN-SUFFIX,nodeseek.com
+DOMAIN-SUFFIX,nodeseek.org
 DOMAIN-SUFFIX,nodesnoop.com
 DOMAIN-SUFFIX,nodesource.com
 DOMAIN-SUFFIX,nofile.io
@@ -21453,6 +21455,7 @@ DOMAIN-SUFFIX,qt.io
 DOMAIN-SUFFIX,qtrac.eu
 DOMAIN-SUFFIX,qtweeter.com
 DOMAIN-SUFFIX,quad9.net
+DOMAIN-SUFFIX,quakemachinex.com
 DOMAIN-SUFFIX,qualcomm-email.com
 DOMAIN-SUFFIX,qualcomm-inc.com
 DOMAIN-SUFFIX,qualcomm.co.id
