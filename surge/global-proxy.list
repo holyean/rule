@@ -2,7 +2,7 @@
 # POLICY: Proxy policy selected by the client
 # DESCRIPTION: Consolidated global-proxy rules for Surge.
 # SOURCES: QuixoticHeart/rule-set proxy; blackmatrix7/ios_rule_script Global; SukkaW global supplements.
-# RULES: 29935
+# RULES: 29942
 DOMAIN,1password.drift.click
 DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
 DOMAIN,adobeereg.com
@@ -6358,6 +6358,7 @@ DOMAIN-SUFFIX,code.org
 DOMAIN-SUFFIX,code1984.com
 DOMAIN-SUFFIX,codeberg.org
 DOMAIN-SUFFIX,codeberg.page
+DOMAIN-SUFFIX,codebuff.com
 DOMAIN-SUFFIX,codecademy.com
 DOMAIN-SUFFIX,codecov.io
 DOMAIN-SUFFIX,codeforaliving.io
@@ -9891,11 +9892,13 @@ DOMAIN-SUFFIX,fiotolia.com
 DOMAIN-SUFFIX,fire-emblem-heroes.com
 DOMAIN-SUFFIX,firearmsworld.net
 DOMAIN-SUFFIX,firebase.com
+DOMAIN-SUFFIX,firebase.dev
 DOMAIN-SUFFIX,firebase.io
 DOMAIN-SUFFIX,firebaseapp.com
 DOMAIN-SUFFIX,firebaseio.com
 DOMAIN-SUFFIX,firech.at
 DOMAIN-SUFFIX,fireemblemawakening.com
+DOMAIN-SUFFIX,firefox-portal-detection.com
 DOMAIN-SUFFIX,firefox.com
 DOMAIN-SUFFIX,firefox.hu
 DOMAIN-SUFFIX,firefoxtweetmachine.com
@@ -10352,6 +10355,7 @@ DOMAIN-SUFFIX,freebigmovies.com
 DOMAIN-SUFFIX,freebrowser.org
 DOMAIN-SUFFIX,freebs.com
 DOMAIN-SUFFIX,freebsd.org
+DOMAIN-SUFFIX,freebuff.com
 DOMAIN-SUFFIX,freecamsfan.com
 DOMAIN-SUFFIX,freecamstars.com
 DOMAIN-SUFFIX,freecartoons.biz
@@ -24198,6 +24202,9 @@ DOMAIN-SUFFIX,stripcamfun.com
 DOMAIN-SUFFIX,stripchat.com
 DOMAIN-SUFFIX,stripe-terminal-local-reader.net
 DOMAIN-SUFFIX,stripe.com
+DOMAIN-SUFFIX,stripe.dev
+DOMAIN-SUFFIX,stripe.events
+DOMAIN-SUFFIX,stripe.global
 DOMAIN-SUFFIX,stripecdn.com
 DOMAIN-SUFFIX,stripparadise.com
 DOMAIN-SUFFIX,stripselector.com

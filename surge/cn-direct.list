@@ -2,7 +2,7 @@
 # POLICY: DIRECT
 # DESCRIPTION: Consolidated mainland-China direct rules for Surge.
 # SOURCES: QuixoticHeart/rule-set cn; SukkaW domestic domain and CIDR supplements.
-# RULES: 108899
+# RULES: 108923
 DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
 DOMAIN,acg.tv
 DOMAIN,app.viayoo.com
@@ -11045,7 +11045,9 @@ DOMAIN-SUFFIX,ajutwatch.com
 DOMAIN-SUFFIX,ajwang.com
 DOMAIN-SUFFIX,ajxhgy.com
 DOMAIN-SUFFIX,ajzq.com
+DOMAIN-SUFFIX,ak-d.tripcdn.com
 DOMAIN-SUFFIX,ak-medical.net
+DOMAIN-SUFFIX,ak-v.tripcdn.com
 DOMAIN-SUFFIX,ak.cc
 DOMAIN-SUFFIX,ak005.com
 DOMAIN-SUFFIX,ak1ak1.com
@@ -28393,6 +28395,7 @@ DOMAIN-SUFFIX,dima-industry.com
 DOMAIN-SUFFIX,dimei88.com
 DOMAIN-SUFFIX,dimeng.vip
 DOMAIN-SUFFIX,dimenspace.com
+DOMAIN-SUFFIX,dimg04.tripcdn.com
 DOMAIN-SUFFIX,dimocap.com
 DOMAIN-SUFFIX,dimolabel.com
 DOMAIN-SUFFIX,dimsmary.tech
@@ -30385,6 +30388,7 @@ DOMAIN-SUFFIX,dzhqexpo.com
 DOMAIN-SUFFIX,dzjc.com
 DOMAIN-SUFFIX,dzjkw.net
 DOMAIN-SUFFIX,dzjob.net
+DOMAIN-SUFFIX,dzjzg.com
 DOMAIN-SUFFIX,dzkbw.com
 DOMAIN-SUFFIX,dzkx.org
 DOMAIN-SUFFIX,dzlaa.com
@@ -32387,6 +32391,7 @@ DOMAIN-SUFFIX,eworksglobal.com
 DOMAIN-SUFFIX,eworldship.com
 DOMAIN-SUFFIX,ewpeinfo.com
 DOMAIN-SUFFIX,ewqcxz.com
+DOMAIN-SUFFIX,ewrrpuquc1.com
 DOMAIN-SUFFIX,ewsaas.com
 DOMAIN-SUFFIX,ewstudy.com
 DOMAIN-SUFFIX,ewt360.com
@@ -33841,6 +33846,7 @@ DOMAIN-SUFFIX,fiinote.com
 DOMAIN-SUFFIX,fiio.com
 DOMAIN-SUFFIX,fiio.net
 DOMAIN-SUFFIX,filcochina.com
+DOMAIN-SUFFIX,file.tripcdn.com
 DOMAIN-SUFFIX,filediag.com
 DOMAIN-SUFFIX,filez.com
 DOMAIN-SUFFIX,filfox.info
@@ -37700,6 +37706,8 @@ DOMAIN-SUFFIX,gohoedu.com
 DOMAIN-SUFFIX,gohomesafe.org
 DOMAIN-SUFFIX,gohomesh.com
 DOMAIN-SUFFIX,gohong.com
+DOMAIN-SUFFIX,goi08130kh.com
+DOMAIN-SUFFIX,goi08160kh.com
 DOMAIN-SUFFIX,going-link.com
 DOMAIN-SUFFIX,gojiaju.com
 DOMAIN-SUFFIX,gokaigai.com
@@ -49491,6 +49499,7 @@ DOMAIN-SUFFIX,imageplusplus.net
 DOMAIN-SUFFIX,imagepy.org
 DOMAIN-SUFFIX,imagerjt.com
 DOMAIN-SUFFIX,images-cache.com
+DOMAIN-SUFFIX,images3.tripcdn.com
 DOMAIN-SUFFIX,imagestoryai.com
 DOMAIN-SUFFIX,imagetotxt.com
 DOMAIN-SUFFIX,imagiclouds.com
@@ -49984,6 +49993,7 @@ DOMAIN-SUFFIX,instafogging.com
 DOMAIN-SUFFIX,installgreat.com
 DOMAIN-SUFFIX,installwage.com
 DOMAIN-SUFFIX,instome.com
+DOMAIN-SUFFIX,instrument95.com
 DOMAIN-SUFFIX,insulators-china.com
 DOMAIN-SUFFIX,insun-china.com
 DOMAIN-SUFFIX,inswindow.com
@@ -58605,6 +58615,7 @@ DOMAIN-SUFFIX,le-wan.com
 DOMAIN-SUFFIX,le.com
 DOMAIN-SUFFIX,le365.cc
 DOMAIN-SUFFIX,le4.com
+DOMAIN-SUFFIX,le4le.com
 DOMAIN-SUFFIX,le5le.com
 DOMAIN-SUFFIX,le8.com
 DOMAIN-SUFFIX,le890.com
@@ -66452,6 +66463,7 @@ DOMAIN-SUFFIX,neoschool.com
 DOMAIN-SUFFIX,neosey.com
 DOMAIN-SUFFIX,neoyon.com
 DOMAIN-SUFFIX,nep-logistics.com
+DOMAIN-SUFFIX,nephele.tripcdn.com
 DOMAIN-SUFFIX,neptcn.com
 DOMAIN-SUFFIX,neptunus.com
 DOMAIN-SUFFIX,neqtahotelshanghai.com
@@ -66977,6 +66989,7 @@ DOMAIN-SUFFIX,nintaus.com
 DOMAIN-SUFFIX,ninthpalace360.com
 DOMAIN-SUFFIX,ninthpalace520.com
 DOMAIN-SUFFIX,nio.com
+DOMAIN-SUFFIX,nio08310lt.com
 DOMAIN-SUFFIX,nioapis.com
 DOMAIN-SUFFIX,niozhr.com
 DOMAIN-SUFFIX,niparts.com
@@ -68339,6 +68352,8 @@ DOMAIN-SUFFIX,nuedcchina.com
 DOMAIN-SUFFIX,nufans.net
 DOMAIN-SUFFIX,nug08010lu.com
 DOMAIN-SUFFIX,nug08011lu.com
+DOMAIN-SUFFIX,nug08030lu.com
+DOMAIN-SUFFIX,nug08031lu.com
 DOMAIN-SUFFIX,nuhcpf.com
 DOMAIN-SUFFIX,nuhighbio.com
 DOMAIN-SUFFIX,nuist.pro
@@ -70587,6 +70602,7 @@ DOMAIN-SUFFIX,piasy.com
 DOMAIN-SUFFIX,piaviation.com
 DOMAIN-SUFFIX,pic-cname.cc
 DOMAIN-SUFFIX,pic-png.com
+DOMAIN-SUFFIX,pic.tripcdn.com
 DOMAIN-SUFFIX,pic16.com
 DOMAIN-SUFFIX,pic21.com
 DOMAIN-SUFFIX,pic315.com
@@ -76151,6 +76167,7 @@ DOMAIN-SUFFIX,s2g2b2c.com
 DOMAIN-SUFFIX,s361.com
 DOMAIN-SUFFIX,s369.com
 DOMAIN-SUFFIX,s4g5.com
+DOMAIN-SUFFIX,s4y6lhotaw.com
 DOMAIN-SUFFIX,s4yd.com
 DOMAIN-SUFFIX,s575.com
 DOMAIN-SUFFIX,s5ex.com
@@ -82467,6 +82484,7 @@ DOMAIN-SUFFIX,staryea.com
 DOMAIN-SUFFIX,stat-nba.com
 DOMAIN-SUFFIX,static.cdnetworks.com
 DOMAIN-SUFFIX,static.djicdn.com
+DOMAIN-SUFFIX,static.tripcdn.com
 DOMAIN-SUFFIX,static163.net
 DOMAIN-SUFFIX,staticaa.com
 DOMAIN-SUFFIX,staticdn.net
@@ -89050,6 +89068,7 @@ DOMAIN-SUFFIX,uborn.net
 DOMAIN-SUFFIX,uboxol.com
 DOMAIN-SUFFIX,ubs001.com
 DOMAIN-SUFFIX,ubssdic.com
+DOMAIN-SUFFIX,ubt.tripcdn.com
 DOMAIN-SUFFIX,ubtrobot.com
 DOMAIN-SUFFIX,ubuant.com
 DOMAIN-SUFFIX,ubuntukylin.com
@@ -90080,6 +90099,8 @@ DOMAIN-SUFFIX,vbango.com
 DOMAIN-SUFFIX,vbaoxian-cib.com
 DOMAIN-SUFFIX,vbbobo.com
 DOMAIN-SUFFIX,vbc08090op.com
+DOMAIN-SUFFIX,vbc08100op.com
+DOMAIN-SUFFIX,vbc08101op.com
 DOMAIN-SUFFIX,vbidc.com
 DOMAIN-SUFFIX,vbio-pharma.com
 DOMAIN-SUFFIX,vbiquge.com
@@ -91952,6 +91973,7 @@ DOMAIN-SUFFIX,webportalapi.com
 DOMAIN-SUFFIX,webpower.asia
 DOMAIN-SUFFIX,webpowerchina.com
 DOMAIN-SUFFIX,webqxs.com
+DOMAIN-SUFFIX,webresource.tripcdn.com
 DOMAIN-SUFFIX,webrtc.win
 DOMAIN-SUFFIX,websbook.com
 DOMAIN-SUFFIX,websec1.com
@@ -95611,6 +95633,7 @@ DOMAIN-SUFFIX,xeeger.com
 DOMAIN-SUFFIX,xeeok.com
 DOMAIN-SUFFIX,xefan.com
 DOMAIN-SUFFIX,xege.org
+DOMAIN-SUFFIX,xegnfwkju.com
 DOMAIN-SUFFIX,xegymyb.xyz
 DOMAIN-SUFFIX,xehedu.com
 DOMAIN-SUFFIX,xeknow.com
@@ -102110,6 +102133,7 @@ DOMAIN-SUFFIX,youhundao.com
 DOMAIN-SUFFIX,youhuohao.com
 DOMAIN-SUFFIX,youhutong.com
 DOMAIN-SUFFIX,youideal.net
+DOMAIN-SUFFIX,youimg1.tripcdn.com
 DOMAIN-SUFFIX,youinsh.com
 DOMAIN-SUFFIX,youj.com
 DOMAIN-SUFFIX,youjiajk.com
