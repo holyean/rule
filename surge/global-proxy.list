@@ -2,7 +2,7 @@
 # POLICY: Proxy policy selected by the client
 # DESCRIPTION: Consolidated global-proxy rules for Surge.
 # SOURCES: QuixoticHeart/rule-set proxy; blackmatrix7/ios_rule_script Global; SukkaW global supplements.
-# RULES: 29942
+# RULES: 29948
 DOMAIN,1password.drift.click
 DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
 DOMAIN,adobeereg.com
@@ -5277,6 +5277,7 @@ DOMAIN-SUFFIX,c-msedge.net
 DOMAIN-SUFFIX,c-span.org
 DOMAIN-SUFFIX,c-spanvideo.org
 DOMAIN-SUFFIX,c.gle
+DOMAIN-SUFFIX,c.go-mpulse.net
 DOMAIN-SUFFIX,c.mi.com
 DOMAIN-SUFFIX,c0930.com
 DOMAIN-SUFFIX,c100tibet.org
@@ -5982,6 +5983,7 @@ DOMAIN-SUFFIX,chinesegay.org
 DOMAIN-SUFFIX,chinesen.de
 DOMAIN-SUFFIX,chinesenews.net.au
 DOMAIN-SUFFIX,chinesepen.org
+DOMAIN-SUFFIX,chineseposters.net
 DOMAIN-SUFFIX,chineseradioseattle.com
 DOMAIN-SUFFIX,chinesespanking.com
 DOMAIN-SUFFIX,chinesetalks.net
@@ -26472,6 +26474,7 @@ DOMAIN-SUFFIX,vaultify.com
 DOMAIN-SUFFIX,vaultify.info
 DOMAIN-SUFFIX,vaultify.net
 DOMAIN-SUFFIX,vaultproject.io
+DOMAIN-SUFFIX,vava8.com
 DOMAIN-SUFFIX,vbcdn.com
 DOMAIN-SUFFIX,vbcdn.net
 DOMAIN-SUFFIX,vbejeyv.shop
@@ -29805,6 +29808,8 @@ IP-CIDR,125.6.149.0/24
 IP-CIDR,125.6.190.0/24
 IP-CIDR,129.134.0.0/17
 IP-CIDR,129.226.0.0/16
+IP-CIDR,13.251.24.0/24
+IP-CIDR,13.251.41.0/24
 IP-CIDR,13.32.0.0/15
 IP-CIDR,13.35.0.0/17
 IP-CIDR,14.102.250.18/31
@@ -29815,6 +29820,7 @@ IP-CIDR,158.85.224.160/27
 IP-CIDR,158.85.46.128/27
 IP-CIDR,158.85.5.192/27
 IP-CIDR,169.45.248.118/32
+IP-CIDR,17.252.156.0/23
 IP-CIDR,173.192.222.160/27
 IP-CIDR,173.192.231.32/27
 IP-CIDR,173.194.0.0/16
