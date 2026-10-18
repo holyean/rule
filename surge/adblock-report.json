@@ -1,0 +1,117 @@
+{
+  "sources": [
+    {
+      "id": "kelee",
+      "name": "可莉 Advertising",
+      "url": "https://rule.kelee.one/Loon/Advertising.lsr",
+      "format": "rules",
+      "min_rules": 100000,
+      "user_agent": "Surge iOS/3908",
+      "fallback_user_agents": [
+        "Loon/984 CFNetwork/3860.600.41 Darwin/25.0.0",
+        "Loon/900 CFNetwork/1498.700.2 Darwin/23.6.0"
+      ],
+      "impersonate": "safari_ios",
+      "sha256": "734ea031789db897c42b4cc42279219aef53e180885b47d46dba9aeaa5eb632a",
+      "parsed_rules": 290010,
+      "unique_rules": 290010,
+      "skipped_types": {},
+      "new_exact_rules_in_source_order": 290010,
+      "surviving_rules": 285858,
+      "exclusive_surviving_rules": 3
+    },
+    {
+      "id": "blackmatrix7",
+      "name": "blackmatrix7 Advertising All",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Advertising/Advertising_All.list",
+      "format": "rules",
+      "min_rules": 100000,
+      "sha256": "83f8bc5656502ff072d31e4f6e2c902fec2af14f931c0c1f96099957b2b964e5",
+      "parsed_rules": 291019,
+      "unique_rules": 291019,
+      "skipped_types": {
+        "AND": 1,
+        "URL-REGEX": 14
+      },
+      "new_exact_rules_in_source_order": 1017,
+      "surviving_rules": 286866,
+      "exclusive_surviving_rules": 0
+    },
+    {
+      "id": "loyalsoldier",
+      "name": "Loyalsoldier reject",
+      "url": "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/reject.txt",
+      "format": "rules",
+      "min_rules": 50000,
+      "sha256": "90d4a33151993a61aa1bff0e84653d9700d44bc38e7b06047beecb82777ad43e",
+      "parsed_rules": 194969,
+      "unique_rules": 194969,
+      "skipped_types": {},
+      "new_exact_rules_in_source_order": 10317,
+      "surviving_rules": 191011,
+      "exclusive_surviving_rules": 622
+    },
+    {
+      "id": "awa",
+      "name": "秋风 AWAvenue Ads Rule",
+      "url": "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Surge.list",
+      "format": "domainset",
+      "min_rules": 300,
+      "sha256": "97f22e605a405856b89d5f17f9971733c31562928077300505a20cd1b90aaec6",
+      "parsed_rules": 961,
+      "unique_rules": 958,
+      "skipped_types": {},
+      "new_exact_rules_in_source_order": 679,
+      "surviving_rules": 622,
+      "exclusive_surviving_rules": 50
+    },
+    {
+      "id": "217heidai",
+      "name": "217heidai adblockfilters",
+      "url": "https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockclash.list",
+      "format": "rules",
+      "min_rules": 50000,
+      "sha256": "b10e24230028ac4142fb0b14c3ea0ce48643e94a66e8cf7d010b91d9e782a800",
+      "parsed_rules": 232357,
+      "unique_rules": 232357,
+      "skipped_types": {},
+      "new_exact_rules_in_source_order": 58144,
+      "surviving_rules": 231071,
+      "exclusive_surviving_rules": 57399
+    }
+  ],
+  "input_rules": 1009316,
+  "unique_rules": 360167,
+  "exact_duplicates_removed": 649149,
+  "allow_domains": [
+    "ghcr.io",
+    "github.app",
+    "github.blog",
+    "github.com",
+    "github.community",
+    "github.dev",
+    "github.io",
+    "githubapp.com",
+    "githubassets.com",
+    "githubcopilot.com",
+    "githubnext.com",
+    "githubpreview.dev",
+    "githubstatus.com",
+    "githubuniverse.com",
+    "githubusercontent.com"
+  ],
+  "allow_rules_removed": 18,
+  "allow_rules_removed_by_type": {
+    "DOMAIN": 1,
+    "DOMAIN-SUFFIX": 17
+  },
+  "final_rules": 353428,
+  "final_types": {
+    "DOMAIN": 14837,
+    "DOMAIN-KEYWORD": 278,
+    "DOMAIN-SUFFIX": 337824,
+    "IP-CIDR": 486,
+    "IP-CIDR6": 3
+  },
+  "output_sha256": "c4d7150211fb08113c47e5bfab376183cf1f97e7b961edf1d4eda30cbf25b4f4"
+}
