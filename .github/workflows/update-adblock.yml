@@ -1,0 +1,54 @@
+name: Update Advertising Rules
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '47 3 * * 1'
+  push:
+    branches: [main]
+    paths:
+      - scripts/build-adblock.py
+      - config/adblock-sources.json
+      - config/adblock-allow-domains.txt
+      - tests/test_adblock.py
+      - .github/workflows/update-adblock.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-adblock-main
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test parser and deduplication
+        run: python3 -m unittest discover -s tests -v
+      - name: Fetch, validate and merge every source
+        run: python3 scripts/build-adblock.py
+      - name: Commit changed outputs
+        run: |
+          git add surge/adblock.list surge/adblock-allow.list surge/adblock-report.json
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git config user.name "holyean-rule-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: update advertising rules"
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+          done
+          exit 1
