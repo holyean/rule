@@ -70,7 +70,7 @@ GitHub Pages 等用户托管内容同样按个人偏好整体放行。
 ### 合并方式
 
 - 来源定义在 `config/adblock-sources.json`，每个来源必须成功下载并通过校验。
-- 可莉源需要完整客户端 User-Agent；配置已记录实测可用值，TLS 校验保持启用。
+- 可莉源使用客户端 User-Agent 和 iOS TLS 请求指纹；TLS 证书校验保持启用。
 - 统一大小写和空白，剥离上游 REJECT/REJECT-DROP 策略；本仓库由订阅时选择策略。
 - 保留 DOMAIN、DOMAIN-SUFFIX、DOMAIN-KEYWORD、IPv4/IPv6 CIDR。
 - 精确域名仍是精确匹配，后缀域名覆盖自身及子域；去重严格按点分隔的域名边界进行。
@@ -99,9 +99,10 @@ GitHub Pages 等用户托管内容同样按个人偏好整体放行。
 
 来源作者和许可证见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
 
-本地验证与构建（Python 3.12+ 和 curl，无第三方 Python 依赖）：
+本地验证与构建（Python 3.12+、curl 及 requirements-adblock.txt）：
 
 ```sh
+python3 -m pip install -r requirements-adblock.txt
 python3 -m unittest discover -s tests -v
 python3 scripts/build-adblock.py
 ```

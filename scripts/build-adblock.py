@@ -92,12 +92,22 @@ def protected(rule, allow):
     return kind == 'DOMAIN-KEYWORD' and any(value in a for a in allow)
 
 
-def fetch(url, user_agent=None, fallback_user_agents=()):
+def fetch(url, user_agent=None, fallback_user_agents=(), impersonate=None):
     # System TLS verification stays enabled. Fail closed on HTTP errors and timeouts.
     command = ['curl', '--fail', '--location', '--silent', '--show-error',
                              '--retry', '3', '--retry-all-errors', '--connect-timeout', '15',
                              '--max-time', '120']
     errors = []
+    if impersonate:
+        import curl_cffi
+        for agent in [user_agent, *fallback_user_agents]:
+            try:
+                response = curl_cffi.get(url, impersonate=impersonate, default_headers=False,
+                                         headers={'User-Agent': agent, 'Accept': '*/*'}, timeout=120)
+                response.raise_for_status()
+                return response.content
+            except curl_cffi.RequestsError as exc:
+                errors.append(str(exc))
     for agent in [user_agent, *fallback_user_agents]:
         options = ['--user-agent', agent] if agent else []
         result = subprocess.run(command + options + [url], capture_output=True)
@@ -121,7 +131,7 @@ def build(cache=None):
     old_sources = {s['id']: s for s in previous.get('sources', [])}
     all_rules, source_rules, stats = [], [], []
     for source in sources:
-        data = (cache / source['id']).read_bytes() if cache else fetch(source['url'], source.get('user_agent'), source.get('fallback_user_agents', []))
+        data = (cache / source['id']).read_bytes() if cache else fetch(source['url'], source.get('user_agent'), source.get('fallback_user_agents', []), source.get('impersonate'))
         rules, skipped = parse(data.decode('utf-8-sig'), source['format'])
         count = len(set(rules))
         check_count(source['id'], count, source['min_rules'], old_sources.get(source['id'], {}).get('unique_rules', 0))
