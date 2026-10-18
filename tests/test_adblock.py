@@ -1,6 +1,8 @@
 import importlib.util
 from pathlib import Path
 import unittest
+from unittest.mock import patch
+from types import SimpleNamespace
 
 spec = importlib.util.spec_from_file_location('adblock', Path(__file__).resolve().parents[1] / 'scripts/build-adblock.py')
 m = importlib.util.module_from_spec(spec)
@@ -54,6 +56,20 @@ class AdblockTests(unittest.TestCase):
         for rule in [('DOMAIN', 'github.com.ads.example.com'), ('DOMAIN', 'fakegithub.com'),
                      ('DOMAIN-KEYWORD', 'advert')]:
             self.assertFalse(m.protected(rule, allow))
+
+    def test_tls_client_uses_configured_agent(self):
+        response = SimpleNamespace(content=b'DOMAIN,ads.example.com', raise_for_status=lambda: None)
+        client = SimpleNamespace(get=lambda *a, **kw: response)
+        with patch.dict('sys.modules', {'curl_cffi': client}):
+            self.assertEqual(m.fetch('https://example.com', 'Loon/984', impersonate='safari_ios'), response.content)
+
+    def test_tls_failure_falls_back_to_system_curl(self):
+        def fail(*args, **kwargs):
+            raise OSError('HTTP 403')
+        client = SimpleNamespace(get=fail, exceptions=SimpleNamespace(RequestException=OSError))
+        result = SimpleNamespace(returncode=0, stdout=b'rules')
+        with patch.dict('sys.modules', {'curl_cffi': client}), patch.object(m.subprocess, 'run', return_value=result):
+            self.assertEqual(m.fetch('https://example.com', 'Loon/984', impersonate='safari_ios'), b'rules')
 
 
 if __name__ == '__main__':

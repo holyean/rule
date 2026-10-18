@@ -106,7 +106,7 @@ def fetch(url, user_agent=None, fallback_user_agents=(), impersonate=None):
                                          headers={'User-Agent': agent, 'Accept': '*/*'}, timeout=120)
                 response.raise_for_status()
                 return response.content
-            except curl_cffi.RequestsError as exc:
+            except curl_cffi.exceptions.RequestException as exc:
                 errors.append(str(exc))
     for agent in [user_agent, *fallback_user_agents]:
         options = ['--user-agent', agent] if agent else []
