@@ -2,7 +2,7 @@
 # POLICY: Proxy policy selected by the client
 # DESCRIPTION: Consolidated global-proxy rules for Surge.
 # SOURCES: QuixoticHeart/rule-set proxy; blackmatrix7/ios_rule_script Global; SukkaW global supplements.
-# RULES: 30070
+# RULES: 30095
 DOMAIN,1password.drift.click
 DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
 DOMAIN,adobeereg.com
@@ -733,6 +733,7 @@ DOMAIN-SUFFIX,7mmtv.tv
 DOMAIN-SUFFIX,7tb.cc
 DOMAIN-SUFFIX,7tv.app
 DOMAIN-SUFFIX,7tv.io
+DOMAIN-SUFFIX,7x24hrs.com
 DOMAIN-SUFFIX,8-d.com
 DOMAIN-SUFFIX,8008206616.com
 DOMAIN-SUFFIX,8111y.top
@@ -3766,8 +3767,15 @@ DOMAIN-SUFFIX,beevpn.com
 DOMAIN-SUFFIX,beforeigners.com
 DOMAIN-SUFFIX,befuck.com
 DOMAIN-SUFFIX,befuck.net
+DOMAIN-SUFFIX,beget.app
+DOMAIN-SUFFIX,beget.cloud
 DOMAIN-SUFFIX,beget.com
+DOMAIN-SUFFIX,beget.de
+DOMAIN-SUFFIX,beget.hosting
+DOMAIN-SUFFIX,beget.pro
 DOMAIN-SUFFIX,beget.ru
+DOMAIN-SUFFIX,beget.tech
+DOMAIN-SUFFIX,begetcdn.cloud
 DOMAIN-SUFFIX,begin-trade.com
 DOMAIN-SUFFIX,behance.net
 DOMAIN-SUFFIX,behindkink.com
@@ -3805,6 +3813,7 @@ DOMAIN-SUFFIX,berlinerbericht.de
 DOMAIN-SUFFIX,berlintwitterwall.com
 DOMAIN-SUFFIX,berm.co.nz
 DOMAIN-SUFFIX,beru.ru
+DOMAIN-SUFFIX,beserver.ru
 DOMAIN-SUFFIX,best-sex-games.com
 DOMAIN-SUFFIX,best2pay.net
 DOMAIN-SUFFIX,best3dhere.com
@@ -3923,6 +3932,7 @@ DOMAIN-SUFFIX,bfads.net
 DOMAIN-SUFFIX,bffshd.com
 DOMAIN-SUFFIX,bfnn.org
 DOMAIN-SUFFIX,bg
+DOMAIN-SUFFIX,bget.ru
 DOMAIN-SUFFIX,bgicdn.com
 DOMAIN-SUFFIX,bgm.tv
 DOMAIN-SUFFIX,bgme.me
@@ -5511,6 +5521,9 @@ DOMAIN-SUFFIX,caobian.info
 DOMAIN-SUFFIX,caochangqing.com
 DOMAIN-SUFFIX,caoporn.us
 DOMAIN-SUFFIX,capcut.com
+DOMAIN-SUFFIX,capcutapi.com
+DOMAIN-SUFFIX,capcutapi.us
+DOMAIN-SUFFIX,capcutstatic.com
 DOMAIN-SUFFIX,capitalg.com
 DOMAIN-SUFFIX,capitalgames.com
 DOMAIN-SUFFIX,capitaliq.com
@@ -6828,6 +6841,7 @@ DOMAIN-SUFFIX,cursor-cdn.com
 DOMAIN-SUFFIX,cursor.com
 DOMAIN-SUFFIX,cursor.sh
 DOMAIN-SUFFIX,cursorapi.com
+DOMAIN-SUFFIX,cursorvm.com
 DOMAIN-SUFFIX,curve.fi
 DOMAIN-SUFFIX,curvefish.com
 DOMAIN-SUFFIX,curvybbwwives.com
@@ -19603,6 +19617,7 @@ DOMAIN-SUFFIX,op.gg
 DOMAIN-SUFFIX,op7979.com
 DOMAIN-SUFFIX,opac-project.eu
 DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,openai.org
 DOMAIN-SUFFIX,openallweb.com
 DOMAIN-SUFFIX,openamt.com
 DOMAIN-SUFFIX,openapiplatform.com
@@ -21433,6 +21448,7 @@ DOMAIN-SUFFIX,putinho.net
 DOMAIN-SUFFIX,putlocker.com
 DOMAIN-SUFFIX,putty.org
 DOMAIN-SUFFIX,puuko.com
+DOMAIN-SUFFIX,pv-cdn.net
 DOMAIN-SUFFIX,pvp.net
 DOMAIN-SUFFIX,pvp.tv
 DOMAIN-SUFFIX,pvt.sexy
@@ -22618,6 +22634,7 @@ DOMAIN-SUFFIX,scatvids.club
 DOMAIN-SUFFIX,scatville.com
 DOMAIN-SUFFIX,scb.ru
 DOMAIN-SUFFIX,scdn.co
+DOMAIN-SUFFIX,scea.com
 DOMAIN-SUFFIX,scene7.com
 DOMAIN-SUFFIX,scenesource.me
 DOMAIN-SUFFIX,scharferporno.com
@@ -22630,6 +22647,7 @@ DOMAIN-SUFFIX,schwab.com
 DOMAIN-SUFFIX,schwab.com.cn
 DOMAIN-SUFFIX,schwab.com.sg
 DOMAIN-SUFFIX,schwabassetmanagement.com
+DOMAIN-SUFFIX,schwabcdn.com
 DOMAIN-SUFFIX,schwabplan.com
 DOMAIN-SUFFIX,sci-hub.ee
 DOMAIN-SUFFIX,sci-hub.it.nf
@@ -23714,6 +23732,7 @@ DOMAIN-SUFFIX,sony.com.ni
 DOMAIN-SUFFIX,sony.com.pa
 DOMAIN-SUFFIX,sony.com.pe
 DOMAIN-SUFFIX,sony.com.ph
+DOMAIN-SUFFIX,sony.com.py
 DOMAIN-SUFFIX,sony.com.sg
 DOMAIN-SUFFIX,sony.com.sv
 DOMAIN-SUFFIX,sony.com.tr
@@ -23757,6 +23776,7 @@ DOMAIN-SUFFIX,sonydesign.com
 DOMAIN-SUFFIX,sonydna.com
 DOMAIN-SUFFIX,sonyentertainmentnetwork.com
 DOMAIN-SUFFIX,sonyglobalsolutions.jp
+DOMAIN-SUFFIX,sonyinteractive.com
 DOMAIN-SUFFIX,sonykigyo.jp
 DOMAIN-SUFFIX,sonylatvija.com
 DOMAIN-SUFFIX,sonynetwork.co.jp
@@ -23936,6 +23956,7 @@ DOMAIN-SUFFIX,sprinklesapp.com
 DOMAIN-SUFFIX,sprite.org
 DOMAIN-SUFFIX,sproutcore.com
 DOMAIN-SUFFIX,sproxy.info
+DOMAIN-SUFFIX,sprut.io
 DOMAIN-SUFFIX,sptvbroadcast.com
 DOMAIN-SUFFIX,sputnikglobe.com
 DOMAIN-SUFFIX,sputnikimages.com
@@ -25385,6 +25406,8 @@ DOMAIN-SUFFIX,timesnownews.com
 DOMAIN-SUFFIX,timestalks.com
 DOMAIN-SUFFIX,timeweb.cloud
 DOMAIN-SUFFIX,timeweb.com
+DOMAIN-SUFFIX,timeweb.tech
+DOMAIN-SUFFIX,timewebcloud.kz
 DOMAIN-SUFFIX,timi1.me
 DOMAIN-SUFFIX,timo0.com
 DOMAIN-SUFFIX,timsah.com
@@ -26118,6 +26141,7 @@ DOMAIN-SUFFIX,typekit.com
 DOMAIN-SUFFIX,typekit.net
 DOMAIN-SUFFIX,typenetwork.com
 DOMAIN-SUFFIX,typepad.com
+DOMAIN-SUFFIX,typesafe.ai
 DOMAIN-SUFFIX,typeset.io
 DOMAIN-SUFFIX,typesquare.com
 DOMAIN-SUFFIX,typography.com
@@ -28542,6 +28566,7 @@ DOMAIN-SUFFIX,xn--8uq428d76d.tokyo
 DOMAIN-SUFFIX,xn--90ab.com
 DOMAIN-SUFFIX,xn--90ab2c.xn--p1ai
 DOMAIN-SUFFIX,xn--90absjljw3g.xn--p1ai
+DOMAIN-SUFFIX,xn--90aefb9d.xn--p1ai
 DOMAIN-SUFFIX,xn--90aifd0az.shop
 DOMAIN-SUFFIX,xn--90aifd0azb.xn--p1acf
 DOMAIN-SUFFIX,xn--90wwvt03e.com
