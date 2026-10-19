@@ -12,13 +12,13 @@
         "Loon/900 CFNetwork/1498.700.2 Darwin/23.6.0"
       ],
       "impersonate": "safari_ios",
-      "sha256": "734ea031789db897c42b4cc42279219aef53e180885b47d46dba9aeaa5eb632a",
-      "parsed_rules": 290010,
-      "unique_rules": 290010,
+      "sha256": "eb335b90967d7ab43def60adf6f25cc3e9e030c2ce057d30aa1c2f9a024b5e84",
+      "parsed_rules": 291019,
+      "unique_rules": 291019,
       "skipped_types": {},
-      "new_exact_rules_in_source_order": 290010,
-      "surviving_rules": 285858,
-      "exclusive_surviving_rules": 3
+      "new_exact_rules_in_source_order": 291019,
+      "surviving_rules": 286866,
+      "exclusive_surviving_rules": 0
     },
     {
       "id": "blackmatrix7",
@@ -33,7 +33,7 @@
         "AND": 1,
         "URL-REGEX": 14
       },
-      "new_exact_rules_in_source_order": 1017,
+      "new_exact_rules_in_source_order": 0,
       "surviving_rules": 286866,
       "exclusive_surviving_rules": 0
     },
@@ -43,13 +43,13 @@
       "url": "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/reject.txt",
       "format": "rules",
       "min_rules": 50000,
-      "sha256": "90d4a33151993a61aa1bff0e84653d9700d44bc38e7b06047beecb82777ad43e",
-      "parsed_rules": 194969,
-      "unique_rules": 194969,
+      "sha256": "3075fac4f41200529e2970eb7f8078fc3fb16e68a9ec8d08f7755619dcd95122",
+      "parsed_rules": 195302,
+      "unique_rules": 195302,
       "skipped_types": {},
-      "new_exact_rules_in_source_order": 10317,
-      "surviving_rules": 191011,
-      "exclusive_surviving_rules": 622
+      "new_exact_rules_in_source_order": 10650,
+      "surviving_rules": 191343,
+      "exclusive_surviving_rules": 657
     },
     {
       "id": "awa",
@@ -71,18 +71,18 @@
       "url": "https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockclash.list",
       "format": "rules",
       "min_rules": 50000,
-      "sha256": "b10e24230028ac4142fb0b14c3ea0ce48643e94a66e8cf7d010b91d9e782a800",
-      "parsed_rules": 232357,
-      "unique_rules": 232357,
+      "sha256": "d22993e81224d9f45dc6850a726526fbbc6d572e93f63e87b119de78682bada8",
+      "parsed_rules": 231528,
+      "unique_rules": 231528,
       "skipped_types": {},
-      "new_exact_rules_in_source_order": 58144,
-      "surviving_rules": 231071,
-      "exclusive_surviving_rules": 57399
+      "new_exact_rules_in_source_order": 57019,
+      "surviving_rules": 230239,
+      "exclusive_surviving_rules": 56271
     }
   ],
-  "input_rules": 1009316,
-  "unique_rules": 360167,
-  "exact_duplicates_removed": 649149,
+  "input_rules": 1009829,
+  "unique_rules": 359367,
+  "exact_duplicates_removed": 650462,
   "allow_domains": [
     "ghcr.io",
     "github.app",
@@ -105,13 +105,13 @@
     "DOMAIN": 1,
     "DOMAIN-SUFFIX": 17
   },
-  "final_rules": 353428,
+  "final_rules": 352627,
   "final_types": {
     "DOMAIN": 14837,
     "DOMAIN-KEYWORD": 278,
-    "DOMAIN-SUFFIX": 337824,
+    "DOMAIN-SUFFIX": 337023,
     "IP-CIDR": 486,
     "IP-CIDR6": 3
   },
-  "output_sha256": "c4d7150211fb08113c47e5bfab376183cf1f97e7b961edf1d4eda30cbf25b4f4"
+  "output_sha256": "bc839b970828e0d1bd8072e6cf9adf6772cf4b633c6c74cf186d0672a07aa0f1"
 }
