@@ -17,7 +17,7 @@
       "unique_rules": 291019,
       "skipped_types": {},
       "new_exact_rules_in_source_order": 291019,
-      "surviving_rules": 286866,
+      "surviving_rules": 286663,
       "exclusive_surviving_rules": 0
     },
     {
@@ -26,15 +26,15 @@
       "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Advertising/Advertising_All.list",
       "format": "rules",
       "min_rules": 100000,
-      "sha256": "83f8bc5656502ff072d31e4f6e2c902fec2af14f931c0c1f96099957b2b964e5",
-      "parsed_rules": 291019,
-      "unique_rules": 291019,
+      "sha256": "b9fe03918e80a496d4b6c142aa386813771b32a5e14a318be7c900e21a75b4d1",
+      "parsed_rules": 291708,
+      "unique_rules": 291708,
       "skipped_types": {
         "AND": 1,
         "URL-REGEX": 14
       },
-      "new_exact_rules_in_source_order": 0,
-      "surviving_rules": 286866,
+      "new_exact_rules_in_source_order": 689,
+      "surviving_rules": 287351,
       "exclusive_surviving_rules": 0
     },
     {
@@ -43,13 +43,13 @@
       "url": "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/reject.txt",
       "format": "rules",
       "min_rules": 50000,
-      "sha256": "3075fac4f41200529e2970eb7f8078fc3fb16e68a9ec8d08f7755619dcd95122",
-      "parsed_rules": 195302,
-      "unique_rules": 195302,
+      "sha256": "303a6e01a6af032392ed84e4ff0ead910b9aba7da3929a76b06457ae35cc2eab",
+      "parsed_rules": 197553,
+      "unique_rules": 197553,
       "skipped_types": {},
-      "new_exact_rules_in_source_order": 10650,
-      "surviving_rules": 191343,
-      "exclusive_surviving_rules": 657
+      "new_exact_rules_in_source_order": 12839,
+      "surviving_rules": 193533,
+      "exclusive_surviving_rules": 549
     },
     {
       "id": "awa",
@@ -62,8 +62,8 @@
       "unique_rules": 958,
       "skipped_types": {},
       "new_exact_rules_in_source_order": 679,
-      "surviving_rules": 622,
-      "exclusive_surviving_rules": 50
+      "surviving_rules": 621,
+      "exclusive_surviving_rules": 47
     },
     {
       "id": "217heidai",
@@ -71,18 +71,18 @@
       "url": "https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockclash.list",
       "format": "rules",
       "min_rules": 50000,
-      "sha256": "d22993e81224d9f45dc6850a726526fbbc6d572e93f63e87b119de78682bada8",
-      "parsed_rules": 231528,
-      "unique_rules": 231528,
+      "sha256": "147b7fcf533af172602cccd5d57c23660a633d3cf3f9518a59c76007d9bb444d",
+      "parsed_rules": 224043,
+      "unique_rules": 224043,
       "skipped_types": {},
-      "new_exact_rules_in_source_order": 57019,
-      "surviving_rules": 230239,
-      "exclusive_surviving_rules": 56271
+      "new_exact_rules_in_source_order": 55541,
+      "surviving_rules": 222819,
+      "exclusive_surviving_rules": 54834
     }
   ],
-  "input_rules": 1009829,
-  "unique_rules": 359367,
-  "exact_duplicates_removed": 650462,
+  "input_rules": 1005284,
+  "unique_rules": 360767,
+  "exact_duplicates_removed": 644517,
   "allow_domains": [
     "ghcr.io",
     "github.app",
@@ -100,18 +100,35 @@
     "githubuniverse.com",
     "githubusercontent.com"
   ],
-  "allow_rules_removed": 18,
+  "allow_rules_removed": 16,
   "allow_rules_removed_by_type": {
     "DOMAIN": 1,
-    "DOMAIN-SUFFIX": 17
+    "DOMAIN-SUFFIX": 15
   },
-  "final_rules": 352627,
+  "functional_allow_rules": [
+    "DOMAIN,gecko-hl.snssdk.com",
+    "DOMAIN,gecko-lq.snssdk.com",
+    "DOMAIN,gecko.snssdk.com",
+    "DOMAIN,lf9-cdn-tos.bytegecko.com",
+    "DOMAIN,mssdk3-normal-zjg.zijieapi.com",
+    "DOMAIN,polaris3-normal-gl2.zijieapi.com",
+    "DOMAIN,security-lq.snssdk.com",
+    "DOMAIN-SUFFIX,qishui.com",
+    "DOMAIN-SUFFIX,zeehoev.com"
+  ],
+  "functional_rules_removed": 8,
+  "functional_rules_removed_by_type": {
+    "DOMAIN": 4,
+    "DOMAIN-SUFFIX": 4
+  },
+  "protected_rules_removed": 24,
+  "final_rules": 353843,
   "final_types": {
-    "DOMAIN": 14837,
+    "DOMAIN": 14876,
     "DOMAIN-KEYWORD": 278,
-    "DOMAIN-SUFFIX": 337023,
+    "DOMAIN-SUFFIX": 338200,
     "IP-CIDR": 486,
     "IP-CIDR6": 3
   },
-  "output_sha256": "bc839b970828e0d1bd8072e6cf9adf6772cf4b633c6c74cf186d0672a07aa0f1"
+  "output_sha256": "23fe67b5fba04552d460b02fa161376a5e795c3f4a601ab07b3c1962681b0b5e"
 }
