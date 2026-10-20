@@ -92,6 +92,23 @@ def protected(rule, allow):
     return kind == 'DOMAIN-KEYWORD' and any(value in a for a in allow)
 
 
+def functional_protected(rule, exceptions):
+    """Exclude conflicts with functional hosts without turning exact hosts into suffixes."""
+    kind, value = rule
+    for allow_kind, host in exceptions:
+        if kind == 'DOMAIN':
+            if value == host or (allow_kind == 'DOMAIN-SUFFIX' and value.endswith('.' + host)):
+                return True
+        elif kind == 'DOMAIN-SUFFIX':
+            if host == value or host.endswith('.' + value):
+                return True
+            if allow_kind == 'DOMAIN-SUFFIX' and value.endswith('.' + host):
+                return True
+        elif kind == 'DOMAIN-KEYWORD' and value in host:
+            return True
+    return False
+
+
 def fetch(url, user_agent=None, fallback_user_agents=(), impersonate=None):
     # System TLS verification stays enabled. Fail closed on HTTP errors and timeouts.
     command = ['curl', '--fail', '--location', '--silent', '--show-error',
@@ -126,6 +143,10 @@ def build(cache=None):
     sources = json.loads((ROOT / 'config/adblock-sources.json').read_text())
     allow = sorted({domain(l.strip()) for l in (ROOT / 'config/adblock-allow-domains.txt').read_text().splitlines()
                     if l.strip() and not l.strip().startswith('#')})
+    functional_allow, functional_skipped = parse((ROOT / 'config/adblock-functional-allow-rules.txt').read_text(), 'rules')
+    if functional_skipped or any(kind not in {'DOMAIN', 'DOMAIN-SUFFIX'} for kind, _ in functional_allow):
+        raise ValueError('Functional exceptions must use DOMAIN or DOMAIN-SUFFIX')
+    functional_allow = sorted(set(functional_allow))
     report_path = ROOT / 'surge/adblock-report.json'
     previous = json.loads(report_path.read_text()) if report_path.exists() else {}
     old_sources = {s['id']: s for s in previous.get('sources', [])}
@@ -140,7 +161,9 @@ def build(cache=None):
                       'new_exact_rules_in_source_order': len(set(rules) - set(all_rules))})
         all_rules.extend(rules)
         source_rules.append(set(rules))
-    allowed_removed = {r for r in all_rules if protected(r, allow)}
+    github_removed = {r for r in all_rules if protected(r, allow)}
+    functional_removed = {r for r in all_rules if functional_protected(r, functional_allow)}
+    allowed_removed = github_removed | functional_removed
     merged = merge(r for r in all_rules if r not in allowed_removed)
     check_count('merged', len(merged), 100000, previous.get('final_rules', 0))
     final = set(merged)
@@ -154,8 +177,12 @@ def build(cache=None):
     output = '\n'.join(header + lines) + '\n'
     report = {'sources': stats, 'input_rules': len(all_rules), 'unique_rules': len(set(all_rules)),
               'exact_duplicates_removed': len(all_rules) - len(set(all_rules)),
-              'allow_domains': allow, 'allow_rules_removed': len(allowed_removed),
-              'allow_rules_removed_by_type': dict(sorted(Counter(k for k, v in allowed_removed).items())),
+              'allow_domains': allow, 'allow_rules_removed': len(github_removed),
+              'allow_rules_removed_by_type': dict(sorted(Counter(k for k, v in github_removed).items())),
+              'functional_allow_rules': [','.join(rule) for rule in functional_allow],
+              'functional_rules_removed': len(functional_removed),
+              'functional_rules_removed_by_type': dict(sorted(Counter(k for k, v in functional_removed).items())),
+              'protected_rules_removed': len(allowed_removed),
               'final_rules': len(merged), 'final_types': dict(sorted(Counter(k for k, v in merged).items())),
               'output_sha256': hashlib.sha256(output.encode()).hexdigest()}
     # No file is replaced until every source and the complete merge have passed validation.

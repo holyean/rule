@@ -1,0 +1,3 @@
+# Remove only this broad shared-SDK classification; domestic apps use snssdk.com.
+# TikTok-specific tiktok*, byteoversea*, musical.ly, isnssdk and sgsnssdk remain unchanged.
+DOMAIN-SUFFIX,snssdk.com

@@ -1,0 +1,13 @@
+# Functional exceptions: domain rules excluded from every merged adblock build.
+# 2026-10-20: Qishui/Douyin business and device-security requests observed on iPhone.
+DOMAIN,polaris3-normal-gl2.zijieapi.com
+DOMAIN,mssdk3-normal-zjg.zijieapi.com
+# Shared functional resource loaders; keep gecko-pangle and telemetry blocked.
+DOMAIN,gecko.snssdk.com
+DOMAIN,gecko-hl.snssdk.com
+DOMAIN,gecko-lq.snssdk.com
+DOMAIN,lf9-cdn-tos.bytegecko.com
+DOMAIN,security-lq.snssdk.com
+# First-party music and vehicle service namespaces.
+DOMAIN-SUFFIX,qishui.com
+DOMAIN-SUFFIX,zeehoev.com

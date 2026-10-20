@@ -4,15 +4,29 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '17 3 * * 1'
+  push:
+    branches: [main]
+    paths:
+      - scripts/build-cn-direct.sh
+      - scripts/build-global-proxy.sh
+      - config/global-proxy-exclude-rules.txt
+      - .github/workflows/update-cn-direct.yml
 
 permissions:
   contents: write
+
+concurrency:
+  group: update-rule-libraries-main
+  cancel-in-progress: false
 
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
 
       - name: Build consolidated rule sets
         run: |
@@ -28,4 +42,10 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add surge/cn-direct.list surge/global-proxy.list
           git commit -m "chore: update Surge rule libraries"
-          git push
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+          done
+          exit 1

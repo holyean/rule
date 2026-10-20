@@ -10,6 +10,7 @@ on:
       - scripts/build-adblock.py
       - config/adblock-sources.json
       - config/adblock-allow-domains.txt
+      - config/adblock-functional-allow-rules.txt
       - requirements-adblock.txt
       - tests/test_adblock.py
       - .github/workflows/update-adblock.yml

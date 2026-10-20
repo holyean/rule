@@ -30,6 +30,10 @@ fetch "$SKK_URL" "$workdir/skk.list"
   done
 } | LC_ALL=C sort -u > "$workdir/rules.list"
 
+awk 'FNR == NR { if ($0 !~ /^[[:space:]]*(#|$)/) excluded[$0] = 1; next }
+     !($0 in excluded)' config/global-proxy-exclude-rules.txt "$workdir/rules.list" > "$workdir/filtered.list"
+mv "$workdir/filtered.list" "$workdir/rules.list"
+
 {
   printf '%s\n' '# NAME: Holyean Global Proxy'
   printf '%s\n' '# POLICY: Proxy policy selected by the client'

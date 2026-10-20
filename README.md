@@ -67,6 +67,27 @@ githubusercontent.com、githubassets.com、github.io、GitHub 开发环境和容
 代理策略；请按自己的访问方式将第一行策略改成代理策略或 DIRECT。
 GitHub Pages 等用户托管内容同样按个人偏好整体放行。
 
+### 国内应用业务误拦截修复
+
+`config/adblock-functional-allow-rules.txt` 独立维护业务例外，每次合并全部来源时均应用，
+避免周更把误拦截重新带回来。现有 `adblock.list` 订阅地址保持有效，无需增加客户端规则组。
+这些域名不会混入指定“美国线路”的 GitHub 放行表。
+
+- 精确放行汽水/抖音使用的 Polaris 业务接口、设备安全接口与 Gecko 功能资源。
+- 保护汽水音乐 `qishui.com` 和极核 `zeehoev.com` 的第一方服务域名。
+- 不整体放行字节跳动或 `snssdk.com`；`log.snssdk.com`、`applog.snssdk.com`、
+  `gecko-pangle-lf.snssdk.com` 等广告/统计规则继续保留。
+- `DOMAIN` 例外只保护该主机，`DOMAIN-SUFFIX` 例外才覆盖其子域。
+  与例外冲突的宽泛域名或关键词拦截会从合并表剔除，报告记录剔除数量。
+
+`config/global-proxy-exclude-rules.txt` 则排除国际表对整个 `snssdk.com` 的泛化分类，
+使该共享 SDK 按现有国内分流表处理；TikTok 专用域名及海外 SDK 域名保持原分类。
+
+极核壁纸发布若出现 `Request body exceeds buffering limit`，原因是客户端脚本要求
+缓存过大的请求体，属于脚本配置问题。域名放行不能修复它；API 请求的头部捕获应避免
+读取图片请求体，网页面板的表单处理可以单独保留。此仓库不会通过关闭整体广告拦截来
+掩盖这类错误，也不存储设备账号或请求内容。
+
 ### 合并方式
 
 - 来源定义在 `config/adblock-sources.json`，每个来源必须成功下载并通过校验。

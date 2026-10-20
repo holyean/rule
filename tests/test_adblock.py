@@ -63,6 +63,34 @@ class AdblockTests(unittest.TestCase):
         with patch.dict('sys.modules', {'curl_cffi': client}):
             self.assertEqual(m.fetch('https://example.com', 'Loon/984', impersonate='safari_ios'), response.content)
 
+    def test_functional_exact_exception_does_not_allow_siblings_or_children(self):
+        allow = [('DOMAIN', 'gecko-lq.snssdk.com')]
+        self.assertTrue(m.functional_protected(('DOMAIN', 'gecko-lq.snssdk.com'), allow))
+        self.assertTrue(m.functional_protected(('DOMAIN-SUFFIX', 'snssdk.com'), allow))
+        for host in ['ads.gecko-lq.snssdk.com', 'gecko-pangle-lf.snssdk.com', 'log.snssdk.com']:
+            self.assertFalse(m.functional_protected(('DOMAIN', host), allow))
+
+    def test_business_exceptions_preserve_tracking_and_advertising_blocks(self):
+        allow, _ = m.parse((m.ROOT / 'config/adblock-functional-allow-rules.txt').read_text(), 'rules')
+        blocked = [('DOMAIN-SUFFIX', 'polaris3-normal-gl2.zijieapi.com'),
+                   ('DOMAIN-SUFFIX', 'mssdk3-normal-zjg.zijieapi.com'),
+                   ('DOMAIN', 'gecko-lq.snssdk.com'),
+                   ('DOMAIN-SUFFIX', 'api.qishui.com'),
+                   ('DOMAIN-SUFFIX', 'oss-cfmoto.zeehoev.com'),
+                   ('DOMAIN-SUFFIX', 'log.snssdk.com'),
+                   ('DOMAIN-SUFFIX', 'applog.snssdk.com'),
+                   ('DOMAIN', 'gecko-pangle-lf.snssdk.com'),
+                   ('DOMAIN-SUFFIX', 'ads.tiktok.com')]
+        remaining = [r for r in blocked if not m.functional_protected(r, allow)]
+        self.assertEqual(remaining, blocked[5:])
+
+    def test_functional_suffix_boundaries_and_keyword_conflicts(self):
+        allow = [('DOMAIN-SUFFIX', 'qishui.com')]
+        self.assertTrue(m.functional_protected(('DOMAIN', 'api.qishui.com'), allow))
+        self.assertTrue(m.functional_protected(('DOMAIN-KEYWORD', 'qishui'), allow))
+        for host in ['fakeqishui.com', 'qishui.com.ads.example.com']:
+            self.assertFalse(m.functional_protected(('DOMAIN', host), allow))
+
     def test_tls_failure_falls_back_to_system_curl(self):
         def fail(*args, **kwargs):
             raise OSError('HTTP 403')
