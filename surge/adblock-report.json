@@ -12,13 +12,13 @@
         "Loon/900 CFNetwork/1498.700.2 Darwin/23.6.0"
       ],
       "impersonate": "safari_ios",
-      "sha256": "eb335b90967d7ab43def60adf6f25cc3e9e030c2ce057d30aa1c2f9a024b5e84",
-      "parsed_rules": 291019,
-      "unique_rules": 291019,
+      "sha256": "679d3d48cdab480df472e6d37f903ecd3f71ebd1a268676c8874f8b4c1e010d6",
+      "parsed_rules": 296191,
+      "unique_rules": 296191,
       "skipped_types": {},
-      "new_exact_rules_in_source_order": 291019,
-      "surviving_rules": 286663,
-      "exclusive_surviving_rules": 0
+      "new_exact_rules_in_source_order": 296191,
+      "surviving_rules": 291918,
+      "exclusive_surviving_rules": 103
     },
     {
       "id": "blackmatrix7",
@@ -26,15 +26,15 @@
       "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Advertising/Advertising_All.list",
       "format": "rules",
       "min_rules": 100000,
-      "sha256": "b9fe03918e80a496d4b6c142aa386813771b32a5e14a318be7c900e21a75b4d1",
-      "parsed_rules": 291708,
-      "unique_rules": 291708,
+      "sha256": "b9b3f7d4945dba89df0eb72194f499f2f7ff6c5eef11f53c57ea9bd428387b32",
+      "parsed_rules": 296805,
+      "unique_rules": 296805,
       "skipped_types": {
         "AND": 1,
         "URL-REGEX": 14
       },
-      "new_exact_rules_in_source_order": 689,
-      "surviving_rules": 287351,
+      "new_exact_rules_in_source_order": 725,
+      "surviving_rules": 292532,
       "exclusive_surviving_rules": 0
     },
     {
@@ -43,13 +43,13 @@
       "url": "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/reject.txt",
       "format": "rules",
       "min_rules": 50000,
-      "sha256": "303a6e01a6af032392ed84e4ff0ead910b9aba7da3929a76b06457ae35cc2eab",
-      "parsed_rules": 197553,
-      "unique_rules": 197553,
+      "sha256": "36b9e172c128400df9644572964c5091215332ac251a9b4769c408967ca21855",
+      "parsed_rules": 200546,
+      "unique_rules": 200546,
       "skipped_types": {},
-      "new_exact_rules_in_source_order": 12839,
-      "surviving_rules": 193533,
-      "exclusive_surviving_rules": 549
+      "new_exact_rules_in_source_order": 10155,
+      "surviving_rules": 196516,
+      "exclusive_surviving_rules": 366
     },
     {
       "id": "awa",
@@ -57,13 +57,13 @@
       "url": "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Surge.list",
       "format": "domainset",
       "min_rules": 300,
-      "sha256": "97f22e605a405856b89d5f17f9971733c31562928077300505a20cd1b90aaec6",
-      "parsed_rules": 961,
-      "unique_rules": 958,
+      "sha256": "d79d9e83a86fbcf9a09abe2af5e09539fa8d5287c1c4f088fd6c3718a86cd2c1",
+      "parsed_rules": 972,
+      "unique_rules": 969,
       "skipped_types": {},
-      "new_exact_rules_in_source_order": 679,
-      "surviving_rules": 621,
-      "exclusive_surviving_rules": 47
+      "new_exact_rules_in_source_order": 690,
+      "surviving_rules": 629,
+      "exclusive_surviving_rules": 20
     },
     {
       "id": "217heidai",
@@ -71,18 +71,18 @@
       "url": "https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockclash.list",
       "format": "rules",
       "min_rules": 50000,
-      "sha256": "147b7fcf533af172602cccd5d57c23660a633d3cf3f9518a59c76007d9bb444d",
-      "parsed_rules": 224043,
-      "unique_rules": 224043,
+      "sha256": "e9a1cb6632742af069d4f18a0ce9ca4850ba4d57d290b2c282e0b9e3c2348d66",
+      "parsed_rules": 244523,
+      "unique_rules": 244523,
       "skipped_types": {},
-      "new_exact_rules_in_source_order": 55541,
-      "surviving_rules": 222819,
-      "exclusive_surviving_rules": 54834
+      "new_exact_rules_in_source_order": 64081,
+      "surviving_rules": 243180,
+      "exclusive_surviving_rules": 63298
     }
   ],
-  "input_rules": 1005284,
-  "unique_rules": 360767,
-  "exact_duplicates_removed": 644517,
+  "input_rules": 1039037,
+  "unique_rules": 371842,
+  "exact_duplicates_removed": 667195,
   "allow_domains": [
     "ghcr.io",
     "github.app",
@@ -100,10 +100,10 @@
     "githubuniverse.com",
     "githubusercontent.com"
   ],
-  "allow_rules_removed": 16,
+  "allow_rules_removed": 20,
   "allow_rules_removed_by_type": {
     "DOMAIN": 1,
-    "DOMAIN-SUFFIX": 15
+    "DOMAIN-SUFFIX": 19
   },
   "functional_allow_rules": [
     "DOMAIN,gecko-hl.snssdk.com",
@@ -116,19 +116,19 @@
     "DOMAIN-SUFFIX,qishui.com",
     "DOMAIN-SUFFIX,zeehoev.com"
   ],
-  "functional_rules_removed": 8,
+  "functional_rules_removed": 9,
   "functional_rules_removed_by_type": {
     "DOMAIN": 4,
-    "DOMAIN-SUFFIX": 4
+    "DOMAIN-SUFFIX": 5
   },
-  "protected_rules_removed": 24,
-  "final_rules": 353843,
+  "protected_rules_removed": 29,
+  "final_rules": 364941,
   "final_types": {
-    "DOMAIN": 14876,
+    "DOMAIN": 14786,
     "DOMAIN-KEYWORD": 278,
-    "DOMAIN-SUFFIX": 338200,
+    "DOMAIN-SUFFIX": 349388,
     "IP-CIDR": 486,
     "IP-CIDR6": 3
   },
-  "output_sha256": "23fe67b5fba04552d460b02fa161376a5e795c3f4a601ab07b3c1962681b0b5e"
+  "output_sha256": "6c4c813d9b849ce0724d11ad384d162691e87102d275b3044aa2cad44d915873"
 }
