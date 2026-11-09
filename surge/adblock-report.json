@@ -17,7 +17,7 @@
       "unique_rules": 291159,
       "skipped_types": {},
       "new_exact_rules_in_source_order": 291159,
-      "surviving_rules": 286706,
+      "surviving_rules": 286326,
       "exclusive_surviving_rules": 0
     },
     {
@@ -34,7 +34,7 @@
         "URL-REGEX": 14
       },
       "new_exact_rules_in_source_order": 0,
-      "surviving_rules": 286706,
+      "surviving_rules": 286326,
       "exclusive_surviving_rules": 0
     },
     {
@@ -43,13 +43,13 @@
       "url": "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/reject.txt",
       "format": "rules",
       "min_rules": 50000,
-      "sha256": "91eb9a46d29f056a76172975634eaf1b9eb971ba607630e85690cb307156bf18",
-      "parsed_rules": 195404,
-      "unique_rules": 195404,
+      "sha256": "344438797e3f2e1e2f341a48740094fc8f1448982b4702589c75c314f2ecef73",
+      "parsed_rules": 199844,
+      "unique_rules": 199844,
       "skipped_types": {},
-      "new_exact_rules_in_source_order": 12524,
-      "surviving_rules": 191098,
-      "exclusive_surviving_rules": 2067
+      "new_exact_rules_in_source_order": 18175,
+      "surviving_rules": 195501,
+      "exclusive_surviving_rules": 7673
     },
     {
       "id": "awa",
@@ -75,14 +75,14 @@
       "parsed_rules": 241710,
       "unique_rules": 241710,
       "skipped_types": {},
-      "new_exact_rules_in_source_order": 63763,
-      "surviving_rules": 240270,
-      "exclusive_surviving_rules": 62976
+      "new_exact_rules_in_source_order": 63758,
+      "surviving_rules": 239888,
+      "exclusive_surviving_rules": 62965
     }
   ],
-  "input_rules": 1020404,
-  "unique_rules": 368136,
-  "exact_duplicates_removed": 652268,
+  "input_rules": 1024844,
+  "unique_rules": 373782,
+  "exact_duplicates_removed": 651062,
   "allow_domains": [
     "ghcr.io",
     "github.app",
@@ -122,13 +122,13 @@
     "DOMAIN-SUFFIX": 5
   },
   "protected_rules_removed": 28,
-  "final_rules": 360947,
+  "final_rules": 366167,
   "final_types": {
     "DOMAIN": 14785,
     "DOMAIN-KEYWORD": 278,
-    "DOMAIN-SUFFIX": 345395,
+    "DOMAIN-SUFFIX": 350615,
     "IP-CIDR": 486,
     "IP-CIDR6": 3
   },
-  "output_sha256": "aa5fd538ce36c08e988eb5c5b26390dbdae63dbaaeda490f21b34a28f00343b7"
+  "output_sha256": "ba5d6050e883d6c84ab9529a2e830ae797690e3c0776448f9ae8998528d7f2a7"
 }
