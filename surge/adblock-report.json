@@ -17,7 +17,7 @@
       "unique_rules": 291159,
       "skipped_types": {},
       "new_exact_rules_in_source_order": 291159,
-      "surviving_rules": 286322,
+      "surviving_rules": 286319,
       "exclusive_surviving_rules": 0
     },
     {
@@ -34,7 +34,7 @@
         "URL-REGEX": 14
       },
       "new_exact_rules_in_source_order": 0,
-      "surviving_rules": 286322,
+      "surviving_rules": 286319,
       "exclusive_surviving_rules": 0
     },
     {
@@ -43,13 +43,13 @@
       "url": "https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/reject.txt",
       "format": "rules",
       "min_rules": 50000,
-      "sha256": "eb6526b3a9b930bd388a9f34ea23d6558d5ebe28f2518fbe8c97a28f3d7016c2",
-      "parsed_rules": 201102,
-      "unique_rules": 201102,
+      "sha256": "4ce33e301aa76cb306e090381b0eaa38e7d5fd6a181b34a89715cbc2f676da03",
+      "parsed_rules": 201556,
+      "unique_rules": 201556,
       "skipped_types": {},
-      "new_exact_rules_in_source_order": 21399,
-      "surviving_rules": 196752,
-      "exclusive_surviving_rules": 11009
+      "new_exact_rules_in_source_order": 23188,
+      "surviving_rules": 197202,
+      "exclusive_surviving_rules": 12780
     },
     {
       "id": "awa",
@@ -57,7 +57,7 @@
       "url": "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Surge.list",
       "format": "domainset",
       "min_rules": 300,
-      "sha256": "67464f152ab12e80b92f7cb47bf5b39b496fea2c08d5173b1ab589e502922173",
+      "sha256": "0327b248d6b8442880c36a31b4fbb894cdac06440c6e7a9500e064a493b0b42b",
       "parsed_rules": 981,
       "unique_rules": 978,
       "skipped_types": {},
@@ -75,14 +75,14 @@
       "parsed_rules": 241710,
       "unique_rules": 241710,
       "skipped_types": {},
-      "new_exact_rules_in_source_order": 63889,
-      "surviving_rules": 239883,
-      "exclusive_surviving_rules": 63095
+      "new_exact_rules_in_source_order": 63875,
+      "surviving_rules": 239879,
+      "exclusive_surviving_rules": 63080
     }
   ],
-  "input_rules": 1026111,
-  "unique_rules": 377143,
-  "exact_duplicates_removed": 648968,
+  "input_rules": 1026565,
+  "unique_rules": 378918,
+  "exact_duplicates_removed": 647647,
   "allow_domains": [
     "ghcr.io",
     "github.app",
@@ -122,13 +122,13 @@
     "DOMAIN-SUFFIX": 5
   },
   "protected_rules_removed": 28,
-  "final_rules": 369502,
+  "final_rules": 371269,
   "final_types": {
     "DOMAIN": 14785,
     "DOMAIN-KEYWORD": 278,
-    "DOMAIN-SUFFIX": 353950,
+    "DOMAIN-SUFFIX": 355717,
     "IP-CIDR": 486,
     "IP-CIDR6": 3
   },
-  "output_sha256": "d09d00e5d6deb755e6a1cd8a67e3652e556b23bf8877b5c2b7ef55e1074f3387"
+  "output_sha256": "de7276e408b92082e92bcc02d6671d39fd57eae6bd79aaad8507257f7b718e70"
 }
